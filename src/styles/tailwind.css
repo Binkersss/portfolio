@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Kadence-like block utilities (small helpers) */
+.kb-block { @apply bg-white rounded-lg shadow p-6 }
+
+@layer utilities {
+	.animate-bounce-slow {
+		animation: bounce 2.4s infinite;
+	}
+}
+
+@layer base {
+  html { font-family: theme('fontFamily.sans'); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
+}
