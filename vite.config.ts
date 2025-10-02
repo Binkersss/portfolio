@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// Minimal Vite config without ESM-only plugins to avoid runtime issues in varied Node versions.
+// replace `portfolio` with your actual repo name
 export default defineConfig({
-  // You can add plugins here if your environment supports them.
+  plugins: [react()],
+  base: '/portfolio/', 
 })
