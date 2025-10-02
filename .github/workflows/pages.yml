@@ -32,7 +32,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build  # change to ./dist if that's your output folder
+          path: ./dist  # change to ./dist if that's your output folder
 
   deploy:
     runs-on: ubuntu-latest
