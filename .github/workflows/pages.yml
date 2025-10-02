@@ -30,11 +30,8 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./dist
+      - name: Build complete
+        run: echo "build finished"
 
   deploy:
     needs: build
@@ -42,6 +39,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
+      contents: write
     environment:
       name: github-pages
       url: https://binkersss.github.io/portfolio/
